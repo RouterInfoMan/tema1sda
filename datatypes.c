@@ -12,7 +12,7 @@ char *strdup_sda(char *src) {
 TLL_LIST_CHAR *alloc_TLL_LIST_CHAR(char *str) {
     TLL_LIST_CHAR *new = (TLL_LIST_CHAR *)malloc(sizeof(TLL_LIST_CHAR));
     if (new == NULL) {
-        printf()"Eroare alocare\n");
+        printf("Eroare alocare\n");
         exit(1);
     }
     new->info = strdup_sda(str);

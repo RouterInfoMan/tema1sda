@@ -1,23 +1,33 @@
 #pragma once
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
-struct dll_list {
+
+typedef struct dll_list {
     char info;
     struct dll_list *prev, *next;
-};
-typedef struct dll_list TDLL_LIST;
+} TDLL_LIST;
 
-struct ll_list {
+typedef struct ll_list_char {
     char *info;
-    struct ll_list *next;
-};
-typedef struct ll_list TLL_LIST;
+    struct ll_list_char *next;
+} TLL_LIST_CHAR;
+typedef struct ll_list_dll {
+    TDLL_LIST *info;
+    struct ll_list_dll *next;
+} TLL_LIST_DLL;
 
-struct QUEUE{
-    TLL_LIST *front, *back;
-};
-typedef struct QUEUE TQUEUE;
+typedef struct QUEUE {
+    TLL_LIST_CHAR *front, *back;
+} TQUEUE;
 
-struct STACK{
-    TLL_LIST *TOP;
-}
-typedef struct STACK TSTACK;
+typedef struct STACK {
+    TLL_LIST_DLL *top;
+} TSTACK;
+
+typedef struct MAGIC_BAND {
+    TDLL_LIST *santinela, *deget;
+} TMAGIC_BAND;
+
+void RUN();

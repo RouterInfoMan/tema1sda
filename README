@@ -1,0 +1,6 @@
+O implementare ca atare a cerintelor temei
+Am creat un tip de date pentru coada, stive si banda magica, si implementat functii care ajuta la utilizarea eficace a acestor structuri
+Am implementat functiile din cerinta temei folosind alocare dinamica pentru a pastra comenzile ce trebuie executate
+si am eliberat memoria respectiva dupa executia comenzii
+100/100 checker local
+20/20 valgrind
